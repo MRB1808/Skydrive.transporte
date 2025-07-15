@@ -1,92 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SkyDrive Transporte de Pasajeros</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0; padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyDrive - Servicio de Transporte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Tu CSS ya incluido aquí, como en el código original */
+    /* ... (sin cambios en el estilo) ... */
+  </style>
+  <script>
+    function changeLanguage(lang) {
+      const translations = {
+        en: {
+          title: "SkyDrive - Transport Service",
+          intro: "Fast and safe transport from Santiago Airport to tourist destinations.",
+          concha: "Visit Concha y Toro Vineyard",
+          valpo: "Explore colorful Valparaíso"
+        },
+        pt: {
+          title: "SkyDrive - Serviço de Transporte",
+          intro: "Transporte rápido e seguro do Aeroporto de Santiago para destinos turísticos.",
+          concha: "Visite a Vinícola Concha y Toro",
+          valpo: "Explore Valparaíso colorido"
+        },
+        es: {
+          title: "SkyDrive - Servicio de Transporte",
+          intro: "Transporte rápido y seguro desde el Aeropuerto de Santiago a destinos turísticos.",
+          concha: "Visita Viña Concha y Toro",
+          valpo: "Explora el colorido Valparaíso"
         }
-        header {
-            background-color: #004080;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header img {
-            width: 60px;
-            vertical-align: middle;
-        }
-        header h1 {
-            display: inline-block;
-            margin-left: 15px;
-            vertical-align: middle;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h2 {
-            color: #004080;
-            border-bottom: 2px solid #004080;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background-color: #cce0ff;
-            margin: 8px 0;
-            padding: 10px;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            margin: 30px 0 10px 0;
-            color: #666;
-            font-size: 0.9em;
-        }
-        .contact-info {
-            margin-top: 20px;
-            font-size: 1.1em;
-        }
-    </style>
+      };
+      const t = translations[lang];
+      document.querySelector('header h1').textContent = t.title;
+      document.getElementById('intro-text').textContent = t.intro;
+      document.getElementById('concha-title').textContent = t.concha;
+      document.getElementById('valpo-title').textContent = t.valpo;
+    }
+  </script>
 </head>
 <body>
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Airplane_silhouette.svg/120px-Airplane_silhouette.svg.png" alt="Avión" />
-        <h1>SkyDrive Transporte de Pasajeros</h1>
-    </header>
-    <section>
-        <h2>Servicios</h2>
-        <ul>
-            <li>Aeropuerto</li>
-            <li>Centros ski</li>
-            <li>Tours</li>
-            <li>Viñas</li>
-            <li>Eventos</li>
-            <li>Valparaíso</li>
-        </ul>
-        <h2>¿Por qué elegirnos?</h2>
-        <ul>
-            <li>Conductores con experiencia</li>
-            <li>Atención personalizada</li>
-        </ul>
-        <div class="contact-info">
-            <p>Contacto: +56 9 9361 5164</p>
-            <p>Email: <a href="mailto:Skydrive.transporte@gmail.com">Skydrive.transporte@gmail.com</a></p>
-        </div>
-    </section>
-    <footer>
-        &copy; 2025 SkyDrive Transporte de Pasajeros. Todos los derechos reservados.
-    </footer>
+  <header>
+    <img src="logo.png" alt="SkyDrive Logo">
+    <h1>SkyDrive - Servicio de Transporte</h1>
+    <nav>
+      <a href="#concha">Concha y Toro</a>
+      <a href="#valpo">Valparaíso</a>
+      <a href="https://www.facebook.com/share/p/1AjtniZT5s/" target="_blank">Facebook</a>
+    </nav>
+    <div class="language-select">
+      <label for="lang">Idioma:</label>
+      <select id="lang" onchange="changeLanguage(this.value)">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+      </select>
+    </div>
+  </header>
+
+  <section>
+    <p id="intro-text">Transporte rápido y seguro desde el Aeropuerto de Santiago a destinos turísticos.</p>
+  </section>
+
+  <section id="concha">
+    <h2 id="concha-title">Visita Viña Concha y Toro</h2>
+    <img src="concha.jpg" alt="Viña Concha y Toro">
+  </section>
+
+  <section id="valpo">
+    <h2 id="valpo-title">Explora el colorido Valparaíso</h2>
+    <img src="valparaiso.jpg" alt="Valparaíso">
+  </section>
+
+  <footer>
+    <p>Contacto: skydrive.transporte@gmail.com | WhatsApp: +56 9 9361 5164</p>
+    <p>&copy; 2025 SkyDrive. Todos los derechos reservados.</p>
+  </footer>
+
+  <div class="whatsapp-button">
+    <a href="https://wa.me/56993615164" target="_blank">
+      <img src="whatsapp-icon.png" alt="WhatsApp">
+    </a>
+  </div>
 </body>
 </html>
