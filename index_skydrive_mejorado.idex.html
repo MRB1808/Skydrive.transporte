@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyDrive Transporte de Pasajeros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 10px 0 0;
+      font-size: 28px;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    ul li {
+      background: #e6f0ff;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    form {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    form button {
+      background: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin: 40px 0 10px;
+    }
+    .contact-info {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    /* WhatsApp button */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 14px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 22px; }
+      header img { max-width: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Skydrive_logo_autoyavion.png" alt="Logo SkyDrive" onerror="this.src='https://chat.openai.com';">
+    <h1>SkyDrive - Servicio de Transporte</h1>
+  </header>
+
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>Traslados al Aeropuerto</li>
+      <li>Centros de Ski</li>
+      <li>Tours y Viñas</li>
+      <li>Eventos</li>
+      <li>Viajes a Valparaíso</li>
+    </ul>
+
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>Conductores con experiencia</li>
+      <li>Atención personalizada</li>
+    </ul>
+
+    <div class="contact-info">
+      <p><strong>Contacto:</strong> +56 9 9361 5164</p>
+      <p><strong>Email:</strong> <a href="mailto:Skydrive.transporte@gmail.com">Skydrive.transporte@gmail.com</a></p>
+    </div>
+
+    <form>
+      <h2>Formulario de contacto</h2>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="4" placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 SkyDrive Transporte de Pasajeros. Todos los derechos reservados.
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/56993615164" target="_blank" title="Contáctanos por WhatsApp">💬</a>
+</body>
+</html>
